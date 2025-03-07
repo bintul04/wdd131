@@ -1,0 +1,139 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Header styling */
+header {
+    background-color: #242564;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #333;
+    padding: 13px;
+    text-align: center;
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation list item styling */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Navigation link styling */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Navigation hover effect */
+nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Main content container for sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Space between sections */
+    flex-wrap: wrap;
+    /* Ensure sections stack on smaller screens */
+    padding: 20px;
+}
+
+/* About Me and Web Dev Resources Section Styling */
+.about-me,
+.resources {
+    width: 48%;
+    /* Both sections take up 48% of the page width */
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners for both boxes */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    /* Slight shadow effect */
+    background-color: #f4f4f4;
+    /* Light grey background for sections */
+}
+
+/* To align the two sections (About Me & Web Dev Resources) side by side */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Space between sections */
+    flex-wrap: nowrap;
+    /* Prevent sections from stacking */
+}
+
+/* About Me image styling */
+.about-me img {
+    width: 150px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer styling */
+footer {
+    background-color: #285078;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Highlight text style */
+.highlight {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Button styling for toggle resources */
+button {
+    background-color: #242564;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the toggle button */
+button:hover {
+    background-color: #333;
+}
+
+/* For making text links underlined when hovered */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for any text or sections under About Me and Web Dev Resources */
+p,
+ul {
+    background-color: transparent;
+    /* Make sure the text background remains transparent */
+    padding: 0;
+    margin: 0;
+}
