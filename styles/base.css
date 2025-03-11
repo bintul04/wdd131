@@ -1,139 +1,145 @@
-/* General body styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    background-color: #fff;
 }
 
-/* Header styling */
 header {
-    background-color: #242564;
-    color: #fff;
+    background-color: #0c346c;
+    color: white;
     padding: 15px;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1.2rem;
 }
 
-/* Navigation styling */
+.highlight {
+    color: #FFD700;
+    font-weight: bold;
+}
+
 nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     background-color: #333;
-    padding: 13px;
-    text-align: center;
+    padding: 10px;
 }
 
-/* Navigation list styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Navigation list item styling */
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-/* Navigation link styling */
-nav ul li a {
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease;
+    padding: 8px 15px;
+    transition: background-color 0.3s, transform 0.3s ease;
 }
 
-/* Navigation hover effect */
-nav ul li a:hover {
-    color: #ffcc00;
+nav a:hover {
+    background-color: #FFD700;
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
-/* Main content container for sections */
-.container {
-    display: flex;
-    justify-content: space-between;
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
-    /* Space between sections */
-    flex-wrap: wrap;
-    /* Ensure sections stack on smaller screens */
-    padding: 20px;
-}
-
-/* About Me and Web Dev Resources Section Styling */
-.about-me,
-.resources {
-    width: 48%;
-    /* Both sections take up 48% of the page width */
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    /* Rounded corners for both boxes */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    /* Slight shadow effect */
-    background-color: #f4f4f4;
-    /* Light grey background for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* To align the two sections (About Me & Web Dev Resources) side by side */
-.container {
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location {
+        order: 2;
+    }
+
+    .resources {
+        order: 1;
+    }
+
+    .about-me {
+        flex: 1;
+        max-height: 250px;
+        overflow: hidden;
+    }
+}
+
+.about-me,
+.location,
+.resources {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.about-me {
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.about-content,
+.location-content {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 20px;
-    /* Space between sections */
-    flex-wrap: nowrap;
-    /* Prevent sections from stacking */
 }
 
-/* About Me image styling */
-.about-me img {
-    width: 150px;
-    border-radius: 5px;
-    display: block;
-    margin: 10px auto;
+/* Image Styling */
+.about-content img,
+.location-content img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #333;
 }
 
-/* Footer styling */
-footer {
-    background-color: #285078;
-    color: white;
+.location h3 {
     text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
-}
-
-/* Highlight text style */
-.highlight {
     font-weight: bold;
-    color: #ffcc00;
+    margin-bottom: 10px;
 }
 
-/* Button styling for toggle resources */
-button {
-    background-color: #242564;
+.about-me h2,
+.resources h2 {
+    background-color: #0c346c;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 20px 0;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* Hover effect for the toggle button */
-button:hover {
-    background-color: #333;
-}
-
-/* For making text links underlined when hovered */
-a:hover {
-    text-decoration: underline;
-}
-
-/* Styling for any text or sections under About Me and Web Dev Resources */
-p,
-ul {
-    background-color: transparent;
-    /* Make sure the text background remains transparent */
+/* Web Dev Resources Layout */
+.resources ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0;
+}
+
+.resources li {
+    padding: 5px 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f2937;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Last Modification Date */
+footer p:last-child {
+    color: #FFD700;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
 }

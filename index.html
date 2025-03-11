@@ -5,88 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131: Dynamic Web Fundamentals</title>
-    <link rel="stylesheet" href="styles/base.css"> <!-- Minified CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
     <header>
         <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Bintu Lukulay</span></h1>
         <nav>
-            <ul>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Canvas</a></li>
-                <li><a href="#">Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
+            <a href="#">LinkedIn</a>
+            <a href="#">Canvas</a>
+            <a href="#">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
 
     <main>
-        <div class="container">
-            <!-- About Me Section -->
-            <section class="about-me">
-                <h2>About Me</h2>
-                <div class="content">
-                    <p>My name is Bintu and I go by Bie. I was born in Sierra Leone and live with my family in Freetown.
-                        I
-                        am currently working as a Chief Security Officer at the Deseret Security Agency. My family is my
-                        world, and I love spending time with them. I love to code, read, research, watch podcasts, and I
-                        love to learn new things.</p>
-                    <img src="images/profile.jpg" alt="Bintu Lukulay" loading="lazy"> <!-- Lazy-loaded image -->
-                </div>
-            </section>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    My name is Bintu and I go by Bie. I was born in Sierra Leone and live with my family in Freetown.
+                    I am currently working as a Chief Security Officer at the Deseret Security Agency.
+                    My loved ones are my world, and I love spending time with them. Apart from coding, I love spending time exploring new recipes, experimenting with flavors in my kitchen, and sharing my
+                    creations with friends and family.
+                </p>
+                <img src="images/profile.jpg" alt="Bintu Lukulay">
+            </div>
+        </section>
 
-            <!-- Web Dev Resources Section -->
-            <section class="resources" id="resources">
-                <h2>Web Dev Resources</h2>
-                <ul>
-                    <li><a href="#">Dev.to Community</a></li>
-                    <li><a href="#">Smashing Magazine</a></li>
-                    <li><a href="#">CSS Tricks</a></li>
-                    <li><a href="#">W3 Schools</a></li>
-                    <li><a href="#">Udemy</a></li>
-                    <li><a href="#">Image Placeholder</a></li>
-                </ul>
-            </section>
-        </div>
+        <section class="location">
+            <h3>Freetown, Sierra Leone</h3>
+            <div class="location-content">
+                <img src="images/sl-flag.png" alt="Official Flag of Sierra Leone">
+                <p>
+                    Sierra Leone, officially the Republic of Sierra Leone, is a country on the southwest coast of West Africa. It is
+                    bordered to the southeast by Liberia and by Guinea to the north. Its land area is 71,740 km2 (27,699 sq mi).It has a
+                    tropical climate and environments ranging from savannas to rainforests. Sierra Leone is known for her amazing natural
+                    harbor and nature enthusiasts.
+                </p>
+            </div>
+        </section>
+
+        <section class="resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Image Placeholder</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="current-year"></span> ✨ Bintu Lukulay ✨ Freetown</p>
-        <p id="last-modified"></p>
+        <p>©<span id="current-year"></span> 🩵 Bintu Lukulay 🩵 Freetown</p>
+        <p id="last-modified">Last Modification: </p>
     </footer>
 
     <script src="scripts/getdates.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get the current year and display it in the footer
-            const currentYear = new Date().getFullYear();
-            const copyrightYearElement = document.querySelector('#current-year');
-            copyrightYearElement.textContent = currentYear;  // Display the current year dynamically
-
-            // Get the last modified date and display it in the footer
-            const lastModifiedElement = document.getElementById('last-modified');
-            const lastModifiedDate = new Date(document.lastModified);
-            const lastModifiedString = `Last Modified: ${lastModifiedDate.toLocaleString()}`;
-            lastModifiedElement.textContent = lastModifiedString;  // Display last modified date dynamically
-
-            // Toggle visibility of the "Web Dev Resources" section
-            const resources = document.querySelector('.resources');
-            const toggleButton = document.createElement('button');
-            toggleButton.innerText = 'Toggle Resources';
-            toggleButton.addEventListener('click', () => {
-                // Toggle the display of the resources section
-                if (resources.style.display === 'none') {
-                    resources.style.display = 'block';
-                } else {
-                    resources.style.display = 'none';
-                }
-            });
-            // Add the toggle button above the resources section
-            document.body.insertBefore(toggleButton, resources);
-        });
-    </script>
 </body>
 
 </html>
