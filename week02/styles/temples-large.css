@@ -1,0 +1,45 @@
+/* Responsive Layout for Larger Screens (min-width: 768px) */
+@media (min-width: 768px) {
+
+    /* Hide the hamburger menu button on larger screens */
+    #menu-button {
+        display: none;
+    }
+
+    /* Display the navigation menu as a horizontal bar */
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    /* Adjust grid layout for images on larger screens */
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* Adjust the figure styles for larger screens */
+    figure {
+        margin: 1rem;
+    }
+
+    /* Increase the font size for the figure captions */
+    figcaption {
+        font-size: 1rem;
+    }
+
+    /* Center the footer content and adjust spacing */
+    footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 2rem;
+    }
+
+    /* Make images more responsive in terms of max width */
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
