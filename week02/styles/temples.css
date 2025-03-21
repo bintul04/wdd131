@@ -84,24 +84,6 @@ header h1 {
     }
 }
 
-#menu-gif {
-    display: none;
-}
-
-/* Display the GIF when the menu is open */
-.nav-menu.open #menu-gif {
-    display: block;
-}
-
-/* Optionally, hide the default hamburger icon when GIF is visible */
-#menu-button img {
-    display: none;
-}
-
-.nav-menu.open #menu-button img {
-    display: block;
-}
-
 /* Main Content Layout */
 main {
     max-width: 800px;

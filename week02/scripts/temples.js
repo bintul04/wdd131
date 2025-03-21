@@ -14,14 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Hamburger Menu Toggle with GIF Animation
+// Hamburger Menu Toggle
 const menuButton = document.getElementById("menu-button");
 const navMenu = document.querySelector(".nav-menu");
-const menuGif = document.getElementById("menu-gif");
 
 menuButton.addEventListener("click", () => {
     navMenu.classList.toggle("open");
-    menuGif.src = navMenu.classList.contains("open")
-        ? "images/hamburger-close.gif"
-        : "images/hamburger-menu.gif";
+    menuButton.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
 });
