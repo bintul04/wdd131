@@ -10,7 +10,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Arial', "Roboto" sans-serif;
+    font-family: 'Arial', 'Roboto', sans-serif;
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
