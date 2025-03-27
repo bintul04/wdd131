@@ -10,7 +10,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', "Roboto" sans-serif;
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
@@ -118,4 +118,11 @@ footer a:hover {
     .hero img {
         max-height: 250px;
     }
+}
+
+/* Replace ::after pseudo-element */
+.weather-box h2::after {
+    content: " ⛅";
+    font-size: 1.5rem;
+    margin-left: 5px;
 }

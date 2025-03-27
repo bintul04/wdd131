@@ -34,6 +34,7 @@ const updateWeatherIcon = (condition) => {
 // Example condition to change the weather icon
 updateWeatherIcon("Partly Cloudy");
 
+
 // Function to dynamically update the weather data
 const updateWeather = (weatherData) => {
     const temp = weatherData.temperature;

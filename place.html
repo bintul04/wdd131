@@ -7,6 +7,12 @@
     <title>Sierra Leone</title>
     <meta name="description" content="Sierra Leone country information and weather forecast.">
     <meta name="author" content="Bintu Lukalay">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -33,13 +39,16 @@
             </div>
 
             <div class="overlay weather-box">
-                <h2>Weather <span class="icon">⛅</span></h2>
+                <h2>weather</h2>
                 <p><strong>Temperature:</strong> <span id="temperature">10°C</span></p>
                 <p><strong>Conditions:</strong> Partly Cloudy</p>
                 <p><strong>Wind:</strong> <span id="wind-speed">5 km/h</span></p>
                 <p><strong>Wind Chill:</strong> <span id="windchill">9.8°C</span></p>
                 <!-- Weather Icon -->
-                <img id="weather-icon" src="images/partly-cloudy.svg" alt="Weather Icon">
+                <img id="weather-icon" src="images/partly-cloudy.svg"
+                    srcset="images/partly-cloudy-small.svg 480w, images/partly-cloudy.svg 1024w"
+                    sizes="(max-width: 600px) 480px, 1024px" alt="Partly Cloudy Weather">
+
             </div>
         </div>
     </main>
