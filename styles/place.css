@@ -1,0 +1,121 @@
+/* Root Variables */
+:root {
+    --primary-color: #1c592a;
+    --secondary-color: #ffffff;
+    --background-color: #0000ff80;
+    --text-color: #333;
+    --overlay-text-color: white;
+    --heading-color: black;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+/* Header Title with Border */
+header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 15px solid #ffffff;
+    display: inline-block;
+    width: 101%;
+}
+
+/* Hero Image */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay Boxes */
+.overlay {
+    position: absolute;
+    background: #0000ff80;
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--overlay-text-color);
+}
+
+/* Data Box */
+.data-box {
+    top: 20%;
+    left: 10%;
+    width: 250px;
+}
+
+/* Weather Box */
+.weather-box {
+    bottom: 15%;
+    right: 10%;
+    width: 200px;
+}
+
+/* Box Headers (h2) */
+.overlay h2 {
+    background-color: var(--secondary-color);
+    color: var(--heading-color);
+    padding: 8px;
+    margin: -15px -15px 10px -15px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.2rem;
+}
+
+/* Weather Icon */
+.weather-box img {
+    width: 20px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Footer Link */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .data-box,
+    .weather-box {
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .hero img {
+        max-height: 250px;
+    }
+}
