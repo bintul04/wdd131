@@ -44,12 +44,13 @@ header h1 {
     width: 100%;
     height: auto;
     display: block;
+    max-height: 350px; /* Adjust for mobile-friendly appearance */
 }
 
 /* Overlay Boxes */
 .overlay {
     position: absolute;
-    background: #0000ff80;
+    background: rgba(0, 0, 0, 0.7);/* Darker overlay for better contrast */
     padding: 15px;
     border-radius: 8px;
     color: var(--overlay-text-color);
@@ -118,6 +119,16 @@ footer a:hover {
     .hero img {
         max-height: 250px;
     }
+}
+
+footer {
+    padding: 10px;
+}
+
+.overlay {
+    padding: 10px;
+    border-radius: 6px;
+    /* Slightly smaller border-radius for mobile */
 }
 
 /* Replace ::after pseudo-element */
