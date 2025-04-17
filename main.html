@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bie's TrendyFit | Chic & Affordable Women's Fashion</title>
+  <meta name="description"
+    content="Shop TrendyFit – your go-to for stylish, affordable women’s fashion. Discover the latest trends in hoodies, dresses, and casual wear.">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="top-bar" role="banner">
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:biecita25@gmail.com">biecita25@gmail.com</a></p>
+    <p><i class="fa-solid fa-phone"></i> <a href="tel:+23231894700">+23231894700</a></p>
+  </header>
+
+  <header class="header">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/fashion.jpg" alt="TrendyFit Fashion Boutique Logo showing a chic fashion model">
+        </a>
+      </div>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Fashionform.html">Share Your Thoughts</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar-b">
+      <div class="dropdown">
+        <label for="category-select" class="visually-hidden">Product Categories</label>
+        <select id="category-select" aria-label="Filter by category">
+          <option>Categories</option>
+          <option>New</option>
+          <option>Imported</option>
+          <option>Local</option>
+        </select>
+      </div>
+
+      <div class="search-cart-wrapper">
+        <form class="search" role="search" aria-label="Site search">
+          <label for="site-search" class="visually-hidden">Search</label>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="site-search" type="search" placeholder="Search..." />
+        </form>
+        <div class="cart" role="button" aria-label="Shopping cart">
+          <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+          <p aria-live="polite">0</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="root" aria-label="Product Listings"></section>
+    <aside class="sidebar" aria-label="Promotional Sidebar">Sidebar</aside>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="copyright-year"></span> 💐<strong>Bintu Lukulay</strong>💐. Freetown, Sierra Leone.</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
